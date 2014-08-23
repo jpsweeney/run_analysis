@@ -1,3 +1,6 @@
+## UCI HAR Dataset file downloadable from 
+## http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+## must by in the working directory for this to work
 xtr <- read.table("./UCI HAR Dataset/train/X_train.txt")
     ## reads in x train data dim 7352 x 561
 ytr <- read.table("./UCI HAR Dataset/train/y_train.txt") 
