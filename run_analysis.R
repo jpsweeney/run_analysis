@@ -4,7 +4,6 @@ ytr <- read.table("./UCI HAR Dataset/train/y_train.txt")
     ## reads in y train data dim 7352 x 1
 str <- read.table("./UCI HAR Dataset/train/subject_train.txt") 
     ## reads in subject train data dim 7352 x 1
-setwd("~/Desktop/Coursera/UCI HAR Dataset/test")
 xts <- read.table("./UCI HAR Dataset/test/X_test.txt") 
     ## reads in x test data dim 2947 x 561
 yts <- read.table("./UCI HAR Dataset/test/y_test.txt") 
@@ -23,7 +22,7 @@ means <- grep("mean", a$V2) ##indexes all mean features
 stds <- grep("std", a$V2) ## indexes all std features
 meanonly <- xdata[,c(means)] ## pulls only mean data 
     ## dim 10299 46
-stdonly <- xdata[,c(stds))] ## pulls only std data
+stdonly <- xdata[,c(stds)] ## pulls only std data
     ## dim 10299 33
 meannames <- a$V2[means] ##names mean vectors
 stnames <- a$V2[stds] ##names std vectors
@@ -120,4 +119,4 @@ write.table(meanmeanbyactivity, file =
 write.table(meansdbyactivity, file = 
     "meansdbyactivity.txt", row.name = FALSE)
 write.table(meansdbyparticipant, file = 
-    "meansdbyparticipant.txt", row.name = FALSE)      
+    "meansdbyparticipant.txt", row.name = FALSE)     
