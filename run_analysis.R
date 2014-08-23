@@ -116,10 +116,10 @@ meanmeanbyacticity <- b
 meansdbyparticipant <- c
 meansdbyactivity <- d
 write.table(meanmeanbyparticipant, file = 
-    "meanmeansbyparticipant.txt", row.name = FALSE)
+    "meanmeansbyparticipant.txt", row.name = FALSE) ## dim 30x47
 write.table(meanmeanbyactivity, file = 
-    "meanmeansbyactivity.txt", row.name = FALSE)
+    "meanmeansbyactivity.txt", row.name = FALSE) ## dim 6x47
 write.table(meansdbyactivity, file = 
-    "meansdbyactivity.txt", row.name = FALSE)
+    "meansdbyactivity.txt", row.name = FALSE) ## dim 30x34
 write.table(meansdbyparticipant, file = 
-    "meansdbyparticipant.txt", row.name = FALSE)     
+    "meansdbyparticipant.txt", row.name = FALSE) ## dim 6x34     
